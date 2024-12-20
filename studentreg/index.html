@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <link rel="stylesheet" type="text/css" href="index.css" >
+   
+</head>
+<body>
+   <!--Headding OF THE PAGE-->
+    <header>
+        <h1>STUDENT ENROLLMENT FORM</h1>
+    </header>
+    <section >
+        <div class="regform">
+            <form id="form" autocomplete="off"  >
+               <table>
+                <tr> <td><label for="stuname">NAME <span>*</span>:</label></td>
+                <td><input type="text" id="stuname" placeholder="Enter fullname..." required></td></tr>
+                <tr><td><label for="stuid">STUDENT ID <span>*</span>:</label></td>
+                <td><input type="number" id="stuid" placeholder="Entrt your student id...." pattern="[09]{3}[0-9]{3}" maxlength="6" required></td></tr>
+                <tr><td><label for="atuemail">E-MAIL ID <span>*</span>:</label></td>
+                <td><input type="email" id="stuemail" placeholder="Enter your email....." required></td></tr>
+                <tr><td><label for="stuphno">CONTACT NO <span>*</span>:</label></td>
+                <td><input type="tel" id="stuphno" placeholder="Enter phone number..."  maxlength="10" required></td></tr>
+                <td><input type="submit" id="submit" value="SUBMIT" onclick=""></td>
+                </tr>
+               </table>
+             </form>
+            </div>
+        <div id="loggedDetails">
+          
+            <h2>STUDENT DETAILS</h2><hr style="background-color:orange; height:2px;margin: 5px;" >
+            <table id="storeattendance" class="list" >
+                <thead >
+                    <tr class="thead">
+                        
+                        <td >NAME</td>
+                        <td>STUDENT ID</td>
+                        <td>EMAIL ID</td>
+                        <td>PHONE NUMBER</td>
+                        <td style="width:60px">UPDATE</td>
+                    </tr>
+                </thead>
+                <tbody id="logStudents">
+
+                    
+
+                </tbody>
+            </table>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </section>
+   
+    
+</body>
+</html> 
